@@ -146,6 +146,167 @@
   padding-right: 8px;
 }
 
+.knowUS {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 87px;
+}
+
+.knowUS_title {
+  color: #7b6c63;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47.92px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.knowUS_line {
+  width: 76px;
+  height: 6px;
+  background-color: #7b6c63;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+
+.knowUS_subtitle {
+  max-width: 530px;
+  color: #212121;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30.06px;
+  letter-spacing: 0.8px;
+  margin: 0 auto;
+}
+
+.weBest .weBest_container {
+  background: #f5f5f5 url(./../../img/webestBg.png) no-repeat center right;
+  background-size: contain;
+  padding-top: 83px;
+  padding-bottom: 90px;
+}
+
+.weBest_block {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.weBest_title {
+  color: #7b6c63;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.weBest_subtitle_first {
+  max-width: 600px;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  padding-top: 24px;
+}
+
+.weBest_subtitle_second {
+  max-width: 600px;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.weBest button.readmore {
+  width: 170px;
+  height: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-right: 5px;
+  word-spacing: 2.5px;
+  background: none;
+  border: 2px solid #000000;
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+}
+
+.services_block {
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 70px;
+}
+
+.services_title {
+  color: #7b6c63;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.services_subtitle {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 13.7px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.services .services_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 84px;
+}
+
+.services .services_items .services_item {
+  max-width: 350px;
+  margin: 0px 30px;
+}
+
+.services .services_items .services_item_title {
+  color: #363636;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.96px;
+  text-transform: uppercase;
+  /* Text style for "C, onsulTa" */
+  letter-spacing: 0.9px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.services .services_items .services_item_subtitle {
+  max-width: 340px;
+  color: #949494;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.95px;
+  /* Text style for "Claritas e" */
+  letter-spacing: 0.8px;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -96,6 +96,7 @@
                         <div class="skils_item_prc">85%</div>
                         <div class="skils_item_title">Management</div>
                     </div>
+                    <div class="skil_drop_991px"></div>
                     <div class="skils_item">
                         <div class="skils_item_prc">85%</div>
                         <div class="skils_item_title">Consultancy</div>
@@ -206,47 +207,61 @@
                 <div class="team_subtitle">Nam liber tempor cum soluta nobis eleifend option 
                     congue nihil imperdiet doming id quod mazim</div>
             </div>
-            <div class="container team_flex">
-                <div class="team_flex_item">
-                    <div class="team_flex_person">
-                        <img src="img/team_person.png" alt="" class="team_flex_img">
-                        <div class="team_flex_network">
-                            <a href="#"><img src="img/twitter.png" alt=""></a>
-                            <a href="#"><img src="img/fbpng.png" alt=""></a>
-                            <a href="#"><img src="img/inpng.png" alt=""></a>
+            <div class="team_flex">
+                <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <div class="track">
+                            <div class="team_flex_item">
+                                <div class="team_flex_person">
+                                    <img src="img/team_person.png" alt="" class="team_flex_img">
+                                    <div class="team_flex_network">
+                                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                                        <a href="#"><img src="img/fbpng.png" alt=""></a>
+                                        <a href="#"><img src="img/inpng.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="team_flex_contacts">
+                                    <div class="team_flex_firstname">Mitchell Anderson</div>
+                                    <div class="team_flex_lastname">Creative Director</div>
+                                </div>
+                            </div>
+                            <div class="team_flex_item">
+                                <div class="team_flex_person">
+                                    <img src="img/team_person.png" alt="" class="team_flex_img">
+                                    <div class="team_flex_network">
+                                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                                        <a href="#"><img src="img/fbpng.png" alt=""></a>
+                                        <a href="#"><img src="img/inpng.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="team_flex_contacts">
+                                    <div class="team_flex_firstname">Mitchell Anderson</div>
+                                    <div class="team_flex_lastname">Creative Director</div>
+                                </div>
+                            </div>
+                            <div class="team_flex_item">
+                                <div class="team_flex_person">
+                                    <img src="img/team_person.png" alt="" class="team_flex_img">
+                                    <div class="team_flex_network">
+                                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                                        <a href="#"><img src="img/fbpng.png" alt=""></a>
+                                        <a href="#"><img src="img/inpng.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="team_flex_contacts">
+                                    <div class="team_flex_firstname">Mitchell Anderson</div>
+                                    <div class="team_flex_lastname">Creative Director</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="team_flex_contacts">
-                        <div class="team_flex_firstname">Mitchell Anderson</div>
-                        <div class="team_flex_lastname">Creative Director</div>
-                    </div>
-                </div>
-                <div class="team_flex_item">
-                    <div class="team_flex_person">
-                        <img src="img/team_person.png" alt="" class="team_flex_img">
-                        <div class="team_flex_network">
-                            <a href="#"><img src="img/twitter.png" alt=""></a>
-                            <a href="#"><img src="img/fbpng.png" alt=""></a>
-                            <a href="#"><img src="img/inpng.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="team_flex_contacts">
-                        <div class="team_flex_firstname">Mitchell Anderson</div>
-                        <div class="team_flex_lastname">Creative Director</div>
-                    </div>
-                </div>
-                <div class="team_flex_item">
-                    <div class="team_flex_person">
-                        <img src="img/team_person.png" alt="" class="team_flex_img">
-                        <div class="team_flex_network">
-                            <a href="#"><img src="img/twitter.png" alt=""></a>
-                            <a href="#"><img src="img/fbpng.png" alt=""></a>
-                            <a href="#"><img src="img/inpng.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="team_flex_contacts">
-                        <div class="team_flex_firstname">Mitchell Anderson</div>
-                        <div class="team_flex_lastname">Creative Director</div>
+                    <div class="slidernav">
+                        <button class="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -359,9 +374,30 @@
                 </div>
             </div>
         </section>
+        <section class="feedback">
+            <div class="container feedback_container">
+            <h2 class="feedback_title">Contact</h2>
+            <form action="" method="POST" class="feedback_form">
+                <div class="feedback_form_item">
+                    <input type="text"  id="name" name="name" placeholder="Name*">
+                    <input type="email" id="email" name="email" placeholder="Email*">
+                </div>
+                <div class="feedback_form_item">
+                    <input type="text"  id="massage" name="massage" placeholder="Massage...">
+                </div>
+                <div class="feedback_form_submit">
+                    <button class="send_form">Submit</button>
+                </div>
+            </form>
+        </div>
+        </section>
     </main>
     <footer></footer>
 
+
+    
+
+    
     <script src="https://kit.fontawesome.com/1e78a60e74.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script >
@@ -370,12 +406,82 @@
                 el: '.swiper-pagination',
             },
         });
-        var swiper = new Swiper('.swiper-container-blog-images', {
+        var swiper2 = new Swiper('.swiper-container-blog-images', {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
         });
+
+        function mySlider() {
+            const prev  = document.querySelector('.prev');
+            const next = document.querySelector('.next');
+            const track = document.querySelector('.track');
+            let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+            let itemWidth = document.querySelector('.team_flex_item').offsetWidth;
+            let index = 0;
+            let maxindex = 2; 
+            if(window.innerWidth <= 800){
+                maxindex = 2 
+            }else if(window.innerWidth <= 1221 && window.innerWidth >= 800){
+                maxindex = 1 
+            }else if(window.innerWidth >= 1221){
+                maxindex = 0 
+                next.classList.add('hide');
+                prev.classList.remove('show');
+                track.style.transform = `translateX(-${0}px)`;
+                console.log(window.innerWidth)
+            }
+
+            window.addEventListener('resize', () => {
+            carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+            itemWidth = document.querySelector('.team_flex_item').offsetWidth;
+            if(window.innerWidth <= 800){
+                maxindex = 2 
+                next.classList.remove('hide');
+                if (index >= maxindex ) {
+                    next.classList.add('hide');
+                }
+            }else if(window.innerWidth <= 1221 && window.innerWidth >= 800){
+                maxindex = 1 
+                next.classList.remove('hide');
+                if (index >= maxindex ) {
+                    next.classList.add('hide');
+                }
+            }else if(window.innerWidth >= 1221){
+                index = 0;
+                maxindex = 0; 
+                next.classList.add('hide');
+                prev.classList.remove('show');
+                track.style.transform = `translateX(-${0}px)`;
+            }
+
+            })
+
+            next.addEventListener('click', () => {
+            index++;
+            prev.classList.add('show');
+            console.log(index * itemWidth + (index - 1) * 15,index,itemWidth)
+            track.style.transform = `translateX(-${index * itemWidth + 15}px)`;
+            if (index >= maxindex ) {
+                next.classList.add('hide');
+            }
+            })
+
+            prev.addEventListener('click', () => {
+            index--;
+            next.classList.remove('hide');
+            if (index === 0) {
+                prev.classList.remove('show');
+            }
+            if(index != 0){
+            track.style.transform = `translateX(-${index * itemWidth + 15}px)`;
+            }else{
+                track.style.transform = `translateX(-${index * itemWidth }px)`;
+            }
+            })
+        }
+        mySlider()
     </script>
 </body>
 </html>

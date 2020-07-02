@@ -1,0 +1,149 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+@media  (max-width: 1221px) {
+  .carousel-container {
+    max-width: 770px;
+  }
+  .team_flex_item{
+    margin: 0 15px 0 0;
+  }
+}
+@media  (max-width: 800px) {
+  .carousel-container {
+    max-width: 385px;
+  }
+}
+  
+  .carousel-container .carousel-inner {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .arrow {
+    border: solid #c1c1c1;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .arrowright {
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  #modal-product .qtybtn {
+      color: #9bbc5a;
+      background: #ffffff;
+      border: 1px solid #9bbc5a;
+    }
+  
+  #modal-product .product-price{
+  
+  text-align:center;
+  }
+  .arrowleft {
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .carousel-container .track {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .carousel-container .card-container {
+    width: 34%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  .carousel-container .card-container .card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius:20px
+  }
+  .slidernav button {
+    background: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+
+  .slidernav .prev {
+    left: -25px;
+    font-size: 32px;
+    display: none;
+    color: rgba(0,5,0,0.7);
+  }
+  .slidernav .prev.show {
+    display: block;
+  }
+  .slidernav .next {
+    right: -15px;
+    font-size: 32px;
+    color: rgba(0,0,0,0.7);
+  }
+  .slidernav .next.hide {
+    display: none;
+  }
+  .card {
+    cursor:pointer;
+  }
+  .card > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .card .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .card .info {
+    -ms-flex-preferred-size: 40px;
+    flex-basis: 40px;
+    background: #333;
+    color: #fff;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  

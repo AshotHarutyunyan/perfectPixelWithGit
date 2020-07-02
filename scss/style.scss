@@ -9,7 +9,22 @@
 @import 'sections/weBest';
 // weBest
 @import 'sections/services';
-// weBest
+// services
+@import 'sections/skils';
+// skils
+@import 'sections/recentproducts';
+// recentproducts
+@import 'sections/galery';
+// galery
+@import 'sections/twiterinfo';
+// twiterinfo
+@import 'sections/team';
+// team
+@import 'sections/clientscoments';
+// clientscoments
+@import 'sections/blog';
+@import 'sections/blogitems';
+// blog
 *{
     margin: 0;
     padding: 0;
@@ -19,4 +34,10 @@
     max-width: 1920px;
     width:100%;
     margin: 0 auto;
+}
+.text-right{
+    text-align: right;
+}
+.ml-auto{
+    margin-left: auto;
 }

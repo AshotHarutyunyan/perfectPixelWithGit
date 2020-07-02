@@ -1,0 +1,35 @@
+.twiterinfo{
+    text-align: center;
+    &_container{
+        background-color: #1a1a1a;
+        padding-top: 118px;
+        padding-bottom: 135px;
+    }
+    &_title{
+        color: #ffffff;
+        @include raleway;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 47.82px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    &_subtitle{
+        color: #ffffff;
+        @include raleway;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 47.82px;
+        letter-spacing: 0.9px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    &_href{
+        color: #ffffff;
+        @include raleway;
+        font-size: 18px;
+        font-weight: 400;
+        color: #29c5f2;
+        letter-spacing: 0.9px;
+    }
+}

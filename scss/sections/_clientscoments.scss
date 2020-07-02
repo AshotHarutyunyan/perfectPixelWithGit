@@ -1,0 +1,64 @@
+.swiper-container {
+    width: 100%;
+    background-color: #1a1a1a;
+  }
+.swiper-pagination {
+    position: relative!important;
+    bottom: 0px!important;
+    padding-top: 36px;
+    padding-bottom: 85px;
+}
+.swiper-pagination-bullet {
+    width: 15px!important;;
+    height: 15px!important;;
+    display: inline-block;
+    border-radius: 100%;
+    background: #1a1a1a!important;;
+    opacity: .6!important;;
+    border: 2px solid #ffffff;
+}
+.swiper-pagination-bullet-active{
+    background: #ffffff!important;
+}
+// section_swiper_styles
+.slide_container {
+    text-align: center;
+    padding-top: 75px;
+}
+.slide_title{
+    color: #ffffff;
+    @include raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 47.82px;
+    text-transform: uppercase;
+    /* Text style for "What Our C" */
+    letter-spacing: 1.2px;
+}
+.slide_subtitle{
+    color: #929292;
+    @include raleway;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    padding-top: 20px;
+}
+.slide_person_name{
+    color: #7b6c63;
+    @include raleway;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    padding-top: 43px;
+
+}
+.slide_link{
+    color: #29c5f2;
+    @include raleway;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    padding-top: 18px;
+}

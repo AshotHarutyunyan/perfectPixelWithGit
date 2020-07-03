@@ -6,13 +6,19 @@
   }
 @media  (max-width: 1221px) {
   .carousel-container {
-    max-width: 770px;
+    max-width: 755px;
   }
   .team_flex_item{
     margin: 0 15px 0 0;
   }
+  .slidernav .next{
+    right: -20px!important;
+  }
 }
 @media  (max-width: 800px) {
+  .slidernav .next{
+    right: -15px!important;
+  }
   .carousel-container {
     max-width: 385px;
   }

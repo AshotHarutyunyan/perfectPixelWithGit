@@ -12,7 +12,7 @@
         <div class="container header_container">
             <nav class="nav">
                 <div class="logo">Mairala</div>
-                <ul class="nav_list">
+                <ul class="nav_list desktop_nav">
                     <li><a href="#" class="nav_link first_link">Home </a></li>
                     <li><a href="#" class="nav_link">About</a></li>
                     <li><a href="#" class="nav_link">Portfolios</a></li>
@@ -20,6 +20,22 @@
                     <li><a href="#" class="nav_link">Blog</a></li>
                     <li><a href="#" class="nav_link">Contact</a></li>
                 </ul>
+                <button class="burger_btn">
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                </button>
+                <div class="mobile_nav">
+                    <ul class="nav_list">
+                        <li><a href="#" class="nav_link first_link">Home </a></li>
+                        <li><a href="#" class="nav_link">About</a></li>
+                        <li><a href="#" class="nav_link">Portfolios</a></li>
+                        <li><a href="#" class="nav_link">Team</a></li>
+                        <li><a href="#" class="nav_link">Blog</a></li>
+                        <li><a href="#" class="nav_link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="close_nav"></div>
             </nav>
         </div>
     </header>
@@ -92,6 +108,7 @@
                         <div class="skils_item_prc">85%</div>
                         <div class="skils_item_title">Reaserch</div>
                     </div>
+                    <div class="skil_drop_768px"></div>
                     <div class="skils_item">
                         <div class="skils_item_prc">85%</div>
                         <div class="skils_item_title">Management</div>
@@ -101,6 +118,7 @@
                         <div class="skils_item_prc">85%</div>
                         <div class="skils_item_title">Consultancy</div>
                     </div>
+                    <div class="skil_drop_768px"></div>
                     <div class="skils_item">
                         <div class="skils_item_prc">85%</div>
                         <div class="skils_item_title">Promotion</div>
@@ -334,7 +352,7 @@
                                 facilisis at vero eros et accumsan et iusto odio dignissim qui <button class="show_all_content">[...]</button></div>
                         </div>
                     </div>
-                    <div class="blog_flex_item">
+                    <div class="blog_flex_item reverse_mobile">
                         <div class="blog_flex_item_info text-right">
                             <div class="blog_flex_item_date">20 March 2014</div>
                             <div class="blog_flex_item_title">Typi non habent claritatem insitam</div>
@@ -347,6 +365,8 @@
                             <div class="swiper-container-blog-images">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide"><img src="img/blog_slide_img.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="img/blog_slide_img.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="img/blog_slide_img.png" alt=""></div>
                                 </div>
                               </div>
                         </div>
@@ -355,6 +375,8 @@
                         <div class="blog_flex_item_slider">
                             <div class="swiper-container-blog-images ml-auto">
                                 <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="img/blog_slide_img.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="img/blog_slide_img.png" alt=""></div>
                                   <div class="swiper-slide"><img src="img/blog_slide_img.png" alt=""></div>
                                 </div>
                               </div>
@@ -395,93 +417,8 @@
     <footer></footer>
 
 
-    
-
-    
     <script src="https://kit.fontawesome.com/1e78a60e74.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script >
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-        var swiper2 = new Swiper('.swiper-container-blog-images', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        });
-
-        function mySlider() {
-            const prev  = document.querySelector('.prev');
-            const next = document.querySelector('.next');
-            const track = document.querySelector('.track');
-            let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
-            let itemWidth = document.querySelector('.team_flex_item').offsetWidth;
-            let index = 0;
-            let maxindex = 2; 
-            if(window.innerWidth <= 800){
-                maxindex = 2 
-            }else if(window.innerWidth <= 1221 && window.innerWidth >= 800){
-                maxindex = 1 
-            }else if(window.innerWidth >= 1221){
-                maxindex = 0 
-                next.classList.add('hide');
-                prev.classList.remove('show');
-                track.style.transform = `translateX(-${0}px)`;
-                console.log(window.innerWidth)
-            }
-
-            window.addEventListener('resize', () => {
-            carouselWidth = document.querySelector('.carousel-container').offsetWidth;
-            itemWidth = document.querySelector('.team_flex_item').offsetWidth;
-            if(window.innerWidth <= 800){
-                maxindex = 2 
-                next.classList.remove('hide');
-                if (index >= maxindex ) {
-                    next.classList.add('hide');
-                }
-            }else if(window.innerWidth <= 1221 && window.innerWidth >= 800){
-                maxindex = 1 
-                next.classList.remove('hide');
-                if (index >= maxindex ) {
-                    next.classList.add('hide');
-                }
-            }else if(window.innerWidth >= 1221){
-                index = 0;
-                maxindex = 0; 
-                next.classList.add('hide');
-                prev.classList.remove('show');
-                track.style.transform = `translateX(-${0}px)`;
-            }
-
-            })
-
-            next.addEventListener('click', () => {
-            index++;
-            prev.classList.add('show');
-            console.log(index * itemWidth + (index - 1) * 15,index,itemWidth)
-            track.style.transform = `translateX(-${index * itemWidth + 15}px)`;
-            if (index >= maxindex ) {
-                next.classList.add('hide');
-            }
-            })
-
-            prev.addEventListener('click', () => {
-            index--;
-            next.classList.remove('hide');
-            if (index === 0) {
-                prev.classList.remove('show');
-            }
-            if(index != 0){
-            track.style.transform = `translateX(-${index * itemWidth + 15}px)`;
-            }else{
-                track.style.transform = `translateX(-${index * itemWidth }px)`;
-            }
-            })
-        }
-        mySlider()
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

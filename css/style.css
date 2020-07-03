@@ -66,6 +66,93 @@
   margin-left: 0;
 }
 
+.header .burger_btn {
+  display: none;
+  border: none;
+  background: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .burger_btn .burger_line {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  display: block;
+}
+
+.header .mobile_nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  z-index: 999;
+  -webkit-transform: translateX(17rem);
+          transform: translateX(17rem);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header .mobile_nav .nav_list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 17rem;
+  height: 100vh;
+}
+
+.header .mobile_nav .nav_list .nav_link {
+  color: #000;
+}
+
+.header .mobile_nav .nav_list .nav_link:hover::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #7b6c63;
+}
+
+.header .mobile_nav .nav_list .first_link {
+  margin-left: 42.5px;
+}
+
+.header .mobile_nav.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header .close_nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header .close_nav.show {
+  opacity: 0.5;
+  z-index: 99;
+}
+
+.header .mobile_nav.show.hidden, .header .close_nav.show.hidden {
+  display: none;
+}
+
 .intro_container {
   position: relative;
   background: url(./../img/introBg.png) no-repeat;
@@ -1059,14 +1146,20 @@
 
 @media (max-width: 1221px) {
   .carousel-container {
-    max-width: 770px;
+    max-width: 755px;
   }
   .team_flex_item {
     margin: 0 15px 0 0;
   }
+  .slidernav .next {
+    right: -20px !important;
+  }
 }
 
 @media (max-width: 800px) {
+  .slidernav .next {
+    right: -15px !important;
+  }
   .carousel-container {
     max-width: 385px;
   }
@@ -1255,6 +1348,91 @@
   }
 }
 
+@media (max-width: 768px) {
+  .desktop_nav {
+    display: none !important;
+  }
+  .burger_btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .skil_drop_991px {
+    width: 0% !important;
+  }
+  .skil_drop_768px {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog_flex_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .blog_flex_item .ml-auto {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .blog_flex_item .blog_flex_item_line {
+    width: 100%;
+    height: 1px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 1rem;
+  }
+  .blog_flex_item .blog_flex_item_line::after {
+    top: -8.5px;
+  }
+  .blog_flex_item .blog_flex_item_line::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: #ebebeb;
+    position: absolute;
+    border-radius: 50%;
+    right: -8.5px;
+    top: -8.5px;
+  }
+  .blog_flex_item.reverse_mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blog_flex_item.reverse_mobile .swiper-container-blog-images {
+    margin-left: auto;
+  }
+  .blog_flex_item.reverse_mobile .blog_flex_item_line {
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+  }
+  .feedback_form_item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog_flex_item_slider, .blog_flex_item_info, .feedback_form input#name, .feedback_form #email {
+    width: 100%;
+  }
+  .feedback_form input#name {
+    margin-bottom: 1rem;
+  }
+  .team_flex_img {
+    max-width: 255px;
+  }
+  .carousel-container {
+    width: 270px;
+  }
+  .intro_title {
+    font-size: 32px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1274,5 +1452,10 @@
 
 .ml-auto {
   margin-left: auto;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
